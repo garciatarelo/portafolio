@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-icon {
+            stroke: #41D194;
+            transition: stroke 0.2s;
+        }
+        .contact-link:hover .contact-icon {
+            stroke: #94A3B8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de Progreso Superior -->
+    <div id="scroll-progress"></div>
+
+    <!-- Orbes de fondo decorativos -->
+    <div class="glow-orb" style="top: 10%; left: 10%;"></div>
+    <div class="glow-orb" style="bottom: 10%; right: 10%; animation-delay: 2s;"></div>
+
+    <!-- Navbar Fija -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bolder" href="#inicio" style="color: var(--bs-accent-primary);">
+                <span class="text-gradient">PAME.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link nav-link-custom mx-2" href="#sobre-mi">01. Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom mx-2" href="#experiencia">02.
+                            Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom mx-2" href="#certificaciones">03.
+                            Formación</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom mx-2" href="#proyectos">04. Proyectos</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom ms-2" href="#contacto">05. Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sección de Inicio (Hero) -->
+        <section id="inicio"
+            class="d-flex align-items-center justify-content-center text-center vh-100 p-4 position-relative overflow-hidden">
+            <div class="container" style="max-width: 900px; z-index: 2;">
+                <p class="section-title fade-in-up">¡HOLA, SOY PAMELA!</p>
+                <h1 class="display-1 fw-bolder mb-3 lh-sm fade-in-up delay-100"
+                    style="font-size: clamp(2.5rem, 6vw, 5rem);">
+                    <span style="color: var(--bs-text-light);">Aprendiendo en el</span><br>
+                    <!-- Efecto Typewriter -->
+                    <span class="text-gradient typewriter">Mundo Digital.</span>
+                </h1>
+                <h2 class="display-6 fw-medium mb-5 fade-in-up delay-200" style="color: var(--bs-text-secondary);">
+                    <span style="font-size: 1.5rem;">Ingeniera en Sistemas en Formación.</span>
+                </h2>
+
+                <div class="fade-in-up delay-300">
+                    <a href="#proyectos" class="btn btn-accent btn-lg px-5 py-3 fs-5">
+                        Ver Proyectos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí (REDISEÑADA: FOTO ARRIBA, TEXTO ABAJO) -->
+        <section id="sobre-mi" class="py-5 py-lg-7 border-top"
+            style="border-color: var(--bs-section-border) !important;">
+            <div class="container">
+                <p class="section-title text-center fade-in-up">SOBRE MÍ</p>
+
+                <!-- Contenedor Centrado Vertical -->
+                <div class="d-flex flex-column align-items-center text-center mt-5">
+
+                    <!-- FOTO PRIMERO (Con animación de Levitación) -->
+                    <div class="profile-img-frame floating-img fade-in-up delay-100 mb-5">
+                        <img src="./src/Foto4.jpeg" class="profile-img" style="width: 250px; height: 250px;">
+                    </div>
+
+                    <!-- INFORMACIÓN ABAJO -->
+                    <div class="col-lg-8 fade-in-up delay-200">
+                        <h2 class="display-5 fw-bold mb-4">
+                            <span class="text-gradient">Perfil Técnico</span>
+                        </h2>
+                        <div class="fs-5" style="color: var(--bs-text-secondary); line-height: 1.8;">
+                            <p class="mb-4">
+                                Estudiante de Ingeniería en Sistemas con interés en el desarrollo web y las tecnologías
+                                digitales. Experiencia en HTML, CSS, JavaScript, PHP y Laravel. Conocimientos básicos en
+                                React y Python. Familiaridad con redes y bases de datos. Capacidad para crear páginas
+                                web funcionales y adaptarse a nuevas herramientas y lenguajes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SKILLS -->
+                    <div class="mt-5 fade-in-up delay-300 col-lg-10">
+                        <h3 class="fs-5 fw-bold mb-4 text-white">Tech Stack</h3>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <span class="skill-badge">HTML</span>
+                            <span class="skill-badge">CSS</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">PHP</span>
+                            <span class="skill-badge">Laravel</span>
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">SQL Server</span>
+                            <span class="skill-badge">Soporte Técnico</span>
+                            <span class="skill-badge">Redes</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Experiencia (Timeline) -->
+        <section id="experiencia" class="py-5 py-lg-7 border-top"
+            style="border-color: var(--bs-section-border) !important;">
+            <div class="container">
+                <p class="section-title text-center fade-in-up">MI HISTORIA</p>
+                <h2 class="display-5 fw-bold mb-5 text-center fade-in-up delay-100">
+                    <span class="text-gradient">Trayectoria Profesional</span>
+                </h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row mb-5 fade-in-up delay-100">
+                            <div
+                                class="col-md-4 text-md-end border-end border-success border-opacity-25 pe-4 mb-3 mb-md-0">
+                                <span class="badge bg-opacity-10 bg-secondary text-secondary mb-2">2022</span>
+                                <h4 class="fw-bold text-white">Caffento</h4>
+                                <p class="small text-secondary">Atención al cliente</p>
+                            </div>
+                            <div class="col-md-8 ps-md-4">
+                                <div class="card-custom p-4">
+                                    <p class="mb-0 text-secondary">
+                                        Experiencia en atención al cliente, manejo de caja y trabajo en equipo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5 fade-in-up delay-200">
+                            <div
+                                class="col-md-4 text-md-end border-end border-success border-opacity-25 pe-4 mb-3 mb-md-0">
+                                <span class="badge bg-opacity-10 bg-secondary text-secondary mb-2">2022 (Prácticas
+                                    profesionales)</span>
+                                <h4 class="fw-bold text-white">Compucenter</h4>
+                                <p class="small text-secondary">Soporte técnico</p>
+                            </div>
+                            <div class="col-md-8 ps-md-4">
+                                <div class="card-custom p-4">
+                                    <p class="mb-0 text-secondary">
+                                        Reparación y mantenimiento de computadoras, armado de cables de red, formateo de
+                                        equipos y atención a usuarios.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Exagelados -->
+                        <div class="row mb-5 fade-in-up delay-300">
+                            <div
+                                class="col-md-4 text-md-end border-end border-success border-opacity-25 pe-4 mb-3 mb-md-0">
+                                <span class="badge bg-opacity-10 bg-secondary text-secondary mb-2">2023 - 2024</span>
+                                <h4 class="fw-bold text-white">Exagelados</h4>
+                                <p class="small text-secondary">Ventas y atención al cliente</p>
+                            </div>
+                            <div class="col-md-8 ps-md-4">
+                                <div class="card-custom p-4">
+                                    <p class="mb-0 text-secondary">
+                                        Atención al cliente, ventas de helados y alimentos, manejo de caja y limpieza
+                                        del área de trabajo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Servicio técnico independiente -->
+                        <div class="row mb-5 fade-in-up delay-400">
+                            <div
+                                class="col-md-4 text-md-end border-end border-success border-opacity-25 pe-4 mb-3 mb-md-0">
+                                <span class="badge bg-opacity-10 bg-success text-success mb-2">Actualidad</span>
+                                <h4 class="fw-bold text-white">Servicio Técnico Independiente</h4>
+                                <p class="small text-secondary">Soporte y reparación de computadoras</p>
+                            </div>
+                            <div class="col-md-8 ps-md-4">
+                                <div class="card-custom p-4">
+                                    <p class="mb-0 text-secondary">
+                                        Diagnóstico, reparación y formateo de computadoras, instalación de software y
+                                        asesoría técnica personalizada.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: CERTIFICACIONES Y CURSOS -->
+        <section id="certificaciones" class="py-5 py-lg-7 border-top"
+            style="border-color: var(--bs-section-border) !important;">
+            <div class="container">
+                <p class="section-title text-center fade-in-up">APRENDIZAJE CONTINUO</p>
+                <h2 class="display-5 fw-bold mb-5 text-center fade-in-up delay-100">
+                    <span class="text-gradient">
+                        Certificaciones y Cursos
+                    </span>
+                </h2>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Cert 1 -->
+                    <div class="col-md-6 col-lg-4 fade-in-up delay-200">
+                        <div
+                            class="card-custom p-4 h-100 d-flex flex-column justify-content-center text-center position-relative">
+                            <div class="position-absolute end-0 top-0 m-3">
+                                <a href="https://www.credly.com/badges/d2a887af-c7dc-41b6-bba8-6627cb37bda4/public_url"
+                                    target="_blank" class="text-decoration-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="var(--bs-text-secondary)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mb-3 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="color: var(--bs-accent-primary);">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                </svg>
+                            </div>
+                            <h4 class="text-white fw-bold mb-2">Linux Unhatched</h4>
+                            <p class="text-secondary small mb-3">Cisco Networking Academy</p>
+                            <span
+                                class="badge bg-transparent border border-success text-success mx-auto rounded-pill px-3"
+                                style="color: #41D194 !important; border-color: #41D194 !important;">2025</span>
+                        </div>
+                    </div>
+                    <!-- Cert 2 -->
+                    <div class="col-md-6 col-lg-4 fade-in-up delay-300">
+                        <div
+                            class="card-custom p-4 h-100 d-flex flex-column justify-content-center text-center position-relative">
+                            <div class="position-absolute end-0 top-0 m-3">
+                                <a href="https://www.credly.com/badges/02726c26-6384-4cea-a6f8-23dbda8fb127/public_url"
+                                    target="_blank" class="text-decoration-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="var(--bs-text-secondary)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mb-3 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="color: var(--bs-accent-primary);">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-white fw-bold mb-2">CCNA: Introduction to Networks</h4>
+                            <p class="text-secondary small mb-3">Cisco Networking Academy</p>
+                            <span
+                                class="badge bg-transparent border border-success text-success mx-auto rounded-pill px-3"
+                                style="color: #41D194 !important; border-color: #41D194 !important;">2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section id="proyectos" class="py-1 border-top" style="border-color: var(--bs-section-border) !important;">
+            <div class="container">
+                <p class="section-title text-center fade-in-up">MIS PROYECTOS</p>
+                <h2 class="display-5 fw-bold mb-5 text-center fade-in-up delay-100">
+                    <span class="text-gradient">Portafolio</span>
+                </h2>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+                    <!-- Proyecto 1 -->
+                    <div class="col fade-in-up delay-200">
+                        <a href="https://github.com/zekkencito/Gestor_de_calificaciones" target="_blank"
+                            class="text-decoration-none d-block">
+                            <div class="card-custom p-4 d-flex flex-column h-100">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                        fill="none" stroke="var(--bs-accent-primary)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="var(--bs-text-secondary)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </div>
+                                <h3 class="h4 fw-bold text-white mb-3">Sistema Gestor de Calificaciones</h3>
+                                <p class="mb-auto text-secondary">Plataforma web educativa para la gestión eficiente de
+                                    calificaciones escolares. Permite a docentes registrar, consultar y analizar el
+                                    rendimiento académico de los estudiantes de manera segura y sencilla.</p>
+                                <p class="mb-auto text-secondary">Plataforma web educativa para la gestión eficiente de
+                                    calificaciones escolares. Permite a docentes registrar, consultar y analizar el
+                                    rendimiento académico de los estudiantes de manera segura y sencilla.</p>
+                                <a href="https://github.com/zekkencito/Gestor_de_calificaciones" target="_blank"
+                                    class="d-inline-block mt-2 text-decoration-none">
+                                    <span style="float: right; display: flex; align-items: center; gap: 6px;">
+                                        Ver repositorio
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 24 24" fill="none" stroke="#41D194" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.67c2.8-1.4 5.5-3.5 5.5-5.5a4.2 4.2 0 0 0-1.1-2.92c.09-.27.4-1.29-.1-2.71 0 0-1 .3-3.1 1.3a11.63 11.63 0 0 0-6.2 0c-2.1-1-3.1-1.3-3.1-1.3-.5 1.42-.2 2.44-.1 2.71a4.2 4.2 0 0 0-1.1 2.92c0 2 2.7 4.1 5.5 5.5-.34.33-.6.76-.84 1.22-.24.46-.35.94-.35 1.43v3.87">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div
+                                    class="mt-4 pt-3 border-top border-secondary border-opacity-10 d-flex flex-wrap gap-2">
+                                    <span
+                                        class="badge bg-transparent border border-secondary text-secondary">HTML</span>
+                                    <span
+                                        class="badge bg-transparent border border-secondary text-secondary">JavaScript</span>
+                                    <span class="badge bg-transparent border border-secondary text-secondary">CSS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="col fade-in-up delay-300">
+                        <a href="https://github.com/garciatarelo/compify" target="_blank"
+                            class="text-decoration-none d-block">
+                            <div class="card-custom p-4 d-flex flex-column h-100">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                        fill="none" stroke="var(--bs-accent-primary)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                        </path>
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="var(--bs-text-secondary)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </div>
+                                <h3 class="h4 fw-bold text-white mb-3">Compify</h3>
+                                <p class="mb-auto text-secondary">Web App para comparar precios de laptops y componentes
+                                    para PC en distintos sitios web. Permite buscar productos, ver comparativas de
+                                    precios y filtrar resultados por marca, modelo o rango de precio, ayudando a
+                                    encontrar la mejor opción disponible.</p>
+                                <a href="https://github.com/garciatarelo/compify" target="_blank"
+                                    class="d-inline-block mt-2 text-decoration-none">
+                                    <span style="float: right; display: flex; align-items: center; gap: 6px;">
+                                        Ver repositorio
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 24 24" fill="none" stroke="#41D194" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.67c2.8-1.4 5.5-3.5 5.5-5.5a4.2 4.2 0 0 0-1.1-2.92c.09-.27.4-1.29-.1-2.71 0 0-1 .3-3.1 1.3a11.63 11.63 0 0 0-6.2 0c-2.1-1-3.1-1.3-3.1-1.3-.5 1.42-.2 2.44-.1 2.71a4.2 4.2 0 0 0-1.1 2.92c0 2 2.7 4.1 5.5 5.5-.34.33-.6.76-.84 1.22-.24.46-.35.94-.35 1.43v3.87">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div
+                                    class="mt-4 pt-3 border-top border-secondary border-opacity-10 d-flex flex-wrap gap-2">
+                                    <span class="badge bg-transparent border border-secondary text-secondary">PHP</span>
+                                    <span
+                                        class="badge bg-transparent border border-secondary text-secondary">Blade</span>
+                                    <span
+                                        class="badge bg-transparent border border-secondary text-secondary">JavaScript</span>
+                                    <span
+                                        class="badge bg-transparent border border-secondary text-secondary">Python</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="col fade-in-up delay-400">
+                        <a href="https://github.com/garciatarelo/novamind/tree/main/novamind" target="_blank"
+                            class="text-decoration-none d-block">
+                            <div class="card-custom p-4 d-flex flex-column h-100">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                        fill="none" stroke="var(--bs-accent-primary)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="var(--bs-text-secondary)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </div>
+                                <h3 class="h4 fw-bold text-white mb-3">NovaMind</h3>
+                                <p class="mb-auto text-secondary">Plataforma de cursos en línea diseñada para acercar
+                                    las tecnologías emergentes a niños y adultos mayores. Ofrece contenidos interactivos
+                                    y accesibles que facilitan la comprensión y el uso de nuevas herramientas digitales,
+                                    promoviendo la inclusión tecnológica para todos.</p>
+                                <a href="https://github.com/garciatarelo/novamind/tree/main/novamind" target="_blank"
+                                    class="d-inline-block mt-2 text-decoration-none">
+                                    <span style="float: right; display: flex; align-items: center; gap: 6px;">
+                                        Ver repositorio
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 24 24" fill="none" stroke="#41D194" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.67c2.8-1.4 5.5-3.5 5.5-5.5a4.2 4.2 0 0 0-1.1-2.92c.09-.27.4-1.29-.1-2.71 0 0-1 .3-3.1 1.3a11.63 11.63 0 0 0-6.2 0c-2.1-1-3.1-1.3-3.1-1.3-.5 1.42-.2 2.44-.1 2.71a4.2 4.2 0 0 0-1.1 2.92c0 2 2.7 4.1 5.5 5.5-.34.33-.6.76-.84 1.22-.24.46-.35.94-.35 1.43v3.87">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div
+                                    class="mt-4 pt-3 border-top border-secondary border-opacity-10 d-flex flex-wrap gap-2">
+                                    <span class="badge bg-transparent border border-secondary text-secondary">PHP</span>
+                                    <span
+                                        class="badge bg-transparent border border-secondary text-secondary">JavaScript</span>
+                                    <span
+                                        class="badge bg-transparent border border-secondary text-secondary">HTML</span>
+                                    <span class="badge bg-transparent border border-secondary text-secondary">CSS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="py-5 py-lg-7 border-top"
+            style="border-color: var(--bs-section-border) !important;">
+            <div class="container text-center" style="max-width: 700px;">
+                <p class="section-title text-center fade-in-up">EL SIGUIENTE PASO</p>
+                <h2 class="display-5 fw-bold mb-4 fade-in-up delay-100">
+                    <span class="text-gradient">Contáctame</span>
+                </h2>
+                <p class="fs-5 mb-5 fade-in-up delay-200" style="color: var(--bs-text-secondary);">
+                    Ponte en contacto para discutir tu proyecto y llevar tus ideas a la realidad.
+                </p>
+                <!-- Botón de Contacto
+                <div class="fade-in-up delay-300">
+                    <a href="mailto:pamelatarelo18@gmail.com" class="btn btn-accent btn-lg px-5 py-3 fs-5">
+                        Solicita información
+                    </a>
+                </div>
+                 -->
+
+                <!-- Enlaces Sociales -->
+                <div class="d-flex justify-content-center mt-5 fade-in-up delay-400 gap-4">
+                    <a href="https://github.com/garciatarelo" class="text-decoration-none contact-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.67c2.8-1.4 5.5-3.5 5.5-5.5a4.2 4.2 0 0 0-1.1-2.92c.09-.27.4-1.29-.1-2.71 0 0-1 .3-3.1 1.3a11.63 11.63 0 0 0-6.2 0c-2.1-1-3.1-1.3-3.1-1.3-.5 1.42-.2 2.44-.1 2.71a4.2 4.2 0 0 0-1.1 2.92c0 2 2.7 4.1 5.5 5.5-.34.33-.6.76-.84 1.22-.24.46-.35.94-.35 1.43v3.87"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pamela-garcia-tarelo-232876392" class="text-decoration-none contact-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:pamelatarelo18@gmail.com" class="contact-link fs-5 d-inline-block" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon">
+                            <rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect>
+                            <polyline points="3 7 12 13 21 7"></polyline>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container py-4 text-center small border-top"
+            style="border-color: var(--bs-section-border) !important; color: var(--bs-text-secondary);">
+            <p class="mb-0">&copy; <span id="current-year"></span> Pamela Tarelo.</p>
+        </div>
+    </footer>
+
+    <!-- Carga de Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
